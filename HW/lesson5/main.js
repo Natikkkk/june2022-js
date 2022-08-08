@@ -55,21 +55,25 @@ create('hi');
 // визначається другим аргументом, який є числовим (тут використовувати цикл)
 
 function create(text){
+    document.write(`<ul>`)
     for (let i = 0; i < 3; i++) {
-        document.write(`<ul>
+        document.write(`
 <li>${text}</li>
 <li>${text}</li>
 <li>${text}</li>
-</ul>  `);
+`);
     }
+    document.write`</ul>`
 }
 create('lol');
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
 function arrayLoop(array){
+    document.write(`<ul>`)
         for (const item of array) {
-            document.write(`<ul><li>${item}</li></ul>`);
+            document.write(`<li>${item}</li>`);
         }
+        document.write(`</ul>`)
 }
 arrayLoop([2654.65,6, 'lolita',643.6, 'hiii', null, 314]);
 
