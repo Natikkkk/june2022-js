@@ -30,10 +30,10 @@ fetch(`https://jsonplaceholder.typicode.com/posts/${postID}/`)
                 comentsDiv.classList = 'div'
                 document.body.appendChild(comentsDiv)
 
-                let name = document.createElement('div')
-                name.innerText = 'Comments'
-                name.classList.add('name')
-                comentsDiv.appendChild(name)
+                // let name = document.createElement('div')
+                // name.innerText = 'Comments'
+                // name.classList.add('name')
+                // comentsDiv.appendChild(name)
 
 
                 for (const item of coments) {
